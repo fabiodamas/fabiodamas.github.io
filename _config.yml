@@ -1,6 +1,9 @@
 layout: sidebar
 style: light
 
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
