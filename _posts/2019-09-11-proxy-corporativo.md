@@ -1,5 +1,5 @@
 ---
-title: "xxx Usar o NPM sob um proxy corporativo"
+title: "Usar o NPM sob um proxy corporativo"
 published: true
 ---
 
