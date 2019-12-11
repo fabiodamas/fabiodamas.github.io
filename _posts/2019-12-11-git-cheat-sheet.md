@@ -1,0 +1,85 @@
+---
+title: "Git Cheat Sheet"
+published: true
+---
+##### Configuração
+Configurando o nome
+`git config --global user.name "[nome]"`
+
+Configurando o e-mail
+`git config --global user.email  "[email]"`
+
+
+##### Branches
+Cria um novo branch:
+`git branch [branch-name]`
+
+Troca para outro branch e atualiza o workspace:
+`git checkout [branch-name]`
+
+Combina o branch especificado para dentro do branch atual. Feito em pull requests:
+`git merge [branch]`
+
+Apaga um branch:
+`git branch -d [branch-name]`
+
+##### Repositórios
+Inicializando:
+`git init`
+
+Clonando um repositório existete:
+`git clone [url]`
+
+##### Ignorando arquivos
+Crie um arquivo .gitignore e coloque o conteúdo abaixo (Exemplo para java:
+```java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+```
+
+##### Sincronizando alterações
+Carrega todo o histórico remoto:
+`git fetch`
+
+combina o branch atual com o remoto:
+`git merge`
+
+Envia para o servidor remoto todas as alterações:
+`git push`
+
+Atualiza seu reposótio local com todos os novos commits que foram feitos remotamente. É a combinação de git fetch e git merge:
+`git pull`
+
+##### Fazendo alterações
+Lista a versão do histórico do branch:
+`git log`
+
+Lista a versão de um histórico do arquivo, inclusive renomeações:
+`git log --follow [file]`
+
+Mostra a diferenaç entre dois branches:
+`git diff [first-branch]...[second-branch]`
+
+Mostra o metadata e conteúdo alerado de um commit específico:
+`git show [commit]`
+
+Adiconar o arquivo para versionamento:
+`git add [file]`
+
+Grava o arquivo permanentemente no histórico de versão
+`git commit -m "[descrição]"
+
+##### Desfazendo commit
+Desfaz todos os commits depois de [commit], preservando alterações locais
+`git rese [commit]
+
+Desctar todo o histórico e alterações antes do commit especificado
+`git rest --hard [commit]
+
+
+
+
