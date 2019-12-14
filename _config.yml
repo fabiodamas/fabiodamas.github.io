@@ -1,4 +1,4 @@
-layout: sidebar
+layout: stacked #sidebar or stacked
 style: light
 
 paginate: 5 # amount of posts to show
