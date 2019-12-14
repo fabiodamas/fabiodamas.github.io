@@ -5,7 +5,7 @@ published: true
 <img style="width:50%;height:auto;text-align: center;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post5/1.png?raw=true">
 Este post é uma continuação da série: “Pipeline de Entrega Contínua“. Você vai aprender a configurar o Jenkins para compilar o código-fonte do Github e efetuar o deploy na instância da amazon.
 
-1. Configurando o Jenkins
+## 1. Configurando o Jenkins
 Acesse o Jenkins na sua máquina virtual da amazon, usando a porta 8081. Insira o nome de usuário e senha e você verá a tela principal:
 <img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post5/2.png?raw=true">
 
@@ -40,7 +40,7 @@ Em name digite “maven-3.5.4”. Repare que deixaremos a caixa de checagem “I
 
 
 
-2. Criando um Job
+## 2. Criando um Job
 Clique em “New Item” para criarmos um Job:
 <img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post5/9.png?raw=true">
 
@@ -76,7 +76,7 @@ Você verá a saída da compilação feita pelo Maven. Observe a linha com o cam
 <img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post5/15.png?raw=true">
 
 
-2. Copiando o arquivo .war para o Tomcat
+## 3. Copiando o arquivo .war para o Tomcat
 Agora é necessário copiar o arquivo .war gerado para a pasta de deploy do Tomcat. Copie o caminho do arquivo .war. Clique em “Back to Project”, na parte esquerda da tela:
 <img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post5/16.png?raw=true">
 
