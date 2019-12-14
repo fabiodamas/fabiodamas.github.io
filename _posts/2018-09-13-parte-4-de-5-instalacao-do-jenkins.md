@@ -2,11 +2,11 @@
 title: "Parte 4 de 5 – Instalação do Jenkins"
 published: true
 ---
-<img style="width:90%;height:auto;text-align: center;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/0.png?raw=true">
+<img style="width:50%;height:auto;text-align: center;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/0.png?raw=true">
 
 Este post é uma continuação da série: “Pipeline de Entrega Contínua“. Você vai aprender a instalar o Jenkins em nossa instância da amazon.
 
-1. Instalando o Jenkins
+## 1. Instalando o Jenkins
 Entre no site https://jenkins.io e clique no link “Download”. Escolha a opção “Ubuntu/Debian”. A seguinte página será exibida:
 <img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/1.png?raw=true">
 
@@ -44,7 +44,7 @@ Veremos o status “active”:
 
 
 
-2. Definindo a porta 8081
+## 2. Definindo a porta 8081
 Como o Tomcat instalado na instância usa a porta 8080 e o Jenkins também, iremos mudar a porta para 8081. Para isso, abra o arquivo de configuração do Jenkins:
 
 ```console
@@ -69,7 +69,7 @@ Faça restart do Jenkins para atualizar com a nova porta:
 sudo service jenkins restart
 ```
 
-3. Configuração inicial do Jenkins
+## 3. Configuração inicial do Jenkins
 Acesse o endereço da instância na amazon, acrescentando a porta 8081 no final: http://ec2-18-234-190-197.compute-1.amazonaws.com:8081/
 <img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/5.png?raw=true">
 
