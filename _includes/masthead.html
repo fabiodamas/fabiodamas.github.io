@@ -45,6 +45,19 @@
             </a>
           </div>
         {% endfor %}
+
+
+        Todos os posts:
+        <p></p>
+        <ul>
+          {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+          <p></p>
+          {% endfor %}
+        </ul>
+
       </div>
     {% endif %}
     {% if user.hireable %}
@@ -53,12 +66,4 @@
   </div>
 {% endif %}
 
-Todos os posts:
-<ul>
-  {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-  <p></p>
-  {% endfor %}
-</ul>
+
