@@ -2,10 +2,12 @@
 title: "Parte 4 de 5 – Instalação do Jenkins"
 published: true
 ---
+<img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/0.png?raw=true">
 Este post é uma continuação da série: “Pipeline de Entrega Contínua“. Você vai aprender a instalar o Jenkins em nossa instância da amazon.
 
 1. Instalando o Jenkins
 Entre no site https://jenkins.io e clique no link “Download”. Escolha a opção “Ubuntu/Debian”. A seguinte página será exibida:
+<img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/1.png?raw=true">
 
 
 
@@ -25,6 +27,8 @@ Verifique se o jenkins está em execução:
 
 sudo service jenkins status
 Veremos o status “active”:
+<img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/2.png?raw=true">
+
 
 
 
@@ -37,16 +41,19 @@ Procure pela variável HTTP_PORT e mude seu valor para 8081.
 Pressione CTRL+O para salvar o arquivo e CTRL+X para fechar o Nano.
 
 A porta 8081 deve ser liberada na instância da Amazon. À esquerda da tela, clique em “Security Groups”:
+<img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/3.png?raw=true">
 
 
 
 Clique no botao “Add Rule” para adicionar uma nova regra. Em “Port Range”, insira a porta 8081 e em source, escolha “Anywhere” e clique no botão “Save”:
+<img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/4.png?raw=true">
 
 Faça restart do Jenkins para atualizar com a nova porta:
 
 sudo service jenkins restart
 3. Configuração inicial do Jenkins
 Acesse o endereço da instância na amazon, acrescentando a porta 8081 no final: http://ec2-18-234-190-197.compute-1.amazonaws.com:8081/
+<img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/5.png?raw=true">
 
 
 Agora devemos obter a senha padrão fornecida pelo Jenkins. Para isso acesse o arquivo com o editor de texto nano:
@@ -55,20 +62,25 @@ sudo nano /var/lib/jenkins/secrets/initialAdminPassword
 Copie a senha e cole na caixa “Administrator password”, clique em “Continuar”.
 
 Surgirá a tela para seleção de plugins:
+<img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/6.png?raw=true">
 
 
 Clique em “Install suggested plugins” para instalar os plugins que a comunidade mais usa.
 
 Após a instalação dos plugins, surgirá a tela para definição do nome de usuário e senha. Neste tutorial, não iremos definir usuário e senha. Portanto, simplesmente clique em “Continua as admin”.
+<img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/7.png?raw=true">
 
 
 Na próxima tela você deve informar qual será a URL para acesso ao Jenkins:
+<img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/8.png?raw=true">
 
 
 Clique em “Save and Finish”. A última tela exibida é:
+<img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/9.png?raw=true">
 
 
 A tela informa que o usuário é “admin” e a senha é a mesma obtida pelo arquivo texto indicado no início da instalação. Clique em “Start using Jenkins” para ver a tela inicial:
+<img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/10.png?raw=true">
 
 
 No próximo post(final), será explicado a configuração do Jenkins para compilar o código-fonte no GitHUB, usando o maven. Logo após a criação do arquivo .war, este será transferido para a pasta de deploy do Tomcat.
