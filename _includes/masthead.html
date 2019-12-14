@@ -53,11 +53,12 @@
   </div>
 {% endif %}
 
-Teste:
+Todos os posts:
 <ul>
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
+    <br>
   </li>
   {% endfor %}
 </ul>
