@@ -3,6 +3,7 @@ title: "Parte 4 de 5 – Instalação do Jenkins"
 published: true
 ---
 <img style="width:90%;height:auto;text-align: center;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post4/0.png?raw=true">
+
 Este post é uma continuação da série: “Pipeline de Entrega Contínua“. Você vai aprender a instalar o Jenkins em nossa instância da amazon.
 
 1. Instalando o Jenkins
