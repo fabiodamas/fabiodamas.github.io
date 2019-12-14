@@ -2,6 +2,15 @@
 title: "Parte 5 (Final) – Jenkins integrado ao GitHub e deploy na Amazon"
 published: true
 ---
+
+  <head>
+    <meta property="og:title" content="Fabio" />
+    <meta property="og:image" content="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post5/1.png?raw=true" />
+    <meta property="og:description" content="super teste" />
+  </head>    
+    
+    
+    
 <img style="width:50%;height:auto;text-align: center;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post5/1.png?raw=true">
 Este post é uma continuação da série: “Pipeline de Entrega Contínua“. Você vai aprender a configurar o Jenkins para compilar o código-fonte do Github e efetuar o deploy na instância da amazon.
 
