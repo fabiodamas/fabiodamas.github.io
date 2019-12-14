@@ -9,76 +9,120 @@ Git é um sistema de controle de versão distribuído para rastrear alterações
 
 O Git foi criado por Linus Torvalds em 2005 para o desenvolvimento do kernel Linux , com outros desenvolvedores do kernel contribuindo para o seu desenvolvimento inicial. eu atual mantenedor desde 2005 é o Junio Hamano. Como na maioria dos outros sistemas distribuídos de controle de versão, e diferentemente da maioria dos sistemas cliente-servidor, todos os diretórios Git em todos os computadores são repositórios completos com histórico completo e habilidades completas de rastreamento de versão, independentemente do acesso à rede ou de um servidor central. O Git é um software livre e de código aberto distribuído sob os termos da GNU General Public License versão 2.
 
-##### Configuração
-Configurando o nome: 
-`git config --global user.name "[nome]"`
+# 1. Configuração
+
+Configurando o nome:
+```console
+$ git config --global user.name "[nome]"
+```
 
 Configurando o e-mail: 
-`git config --global user.email  "[email]"`
+```console
+$ git config --global user.email  "[email]"
+```
 
+   
+## 2. Branches
 
-##### Branches
 Cria um novo branch: 
-`git branch [branch-name]`
+```console
+$ git branch [branch-name]
+```
 
 Troca para outro branch e atualiza o workspace: 
-`git checkout [branch-name]`
+```console
+$ git checkout [branch-name]
+```
 
 Combina o branch especificado para dentro do branch atual. Feito em pull requests: 
-`git merge [branch]`
+```console
+$ git merge [branch]
+```
 
 Apaga um branch: 
-`git branch -d [branch-name]`
+```console
+$ git branch -d [branch-name]
+```
 
 Lista todos os branches existentes: 
-`git branch -av`
+```console
+$ git branch -av
+```
 
 Marca o commit atual com uma tag: 
-`git tag <tag-name>`
+```console
+$ git tag <tag-name>
+```
 
 Apaga o branch no repositório remoto: 
-`git branch -dr <remote/branch>`
+```console
+$ git branch -dr <remote/branch>
+```
 
 Publica suas tags: 
-`git push --tags`
+```console
+$ git push --tags
+```
 
 Rebase seu HEAD atual dentro do branch: 
-`git rebase <branch>`
+```console
+$ git rebase <branch>
+```
 
 Aborta um rebase: 
-`git rebase --abort`
+```console
+$ git rebase --abort
+```
 
 Ferramenta para resolução de conflito: 
-`git mergetool`
+```console
+$ git mergetool
+```
 
-##### Desfaz alterações
+## 3. Desfaz alterações
 Cria um novo commit que desfaz todas as alterações feitas no commit, então aplicando isso para o branch atual: 
-`git revert <commit>`
+```console
+git revert <commit>
+```
 
 Remove o arquivo do stage, mas deixa o diretório sem alteração. Isso retira o arquivo do stage sem alterar fisicamente o diretório: 
-`git reset <file>`
+```console
+git reset <file>
+```
 
 Mostra quais arquivos poderiam ser removidos do diretório de trabalho. Use -f para executar a limpeza: 
-`git clean -n`
+```console
+git clean -n
+```
 
 
-##### Repositórios
+## 4. Repositórios
 Cria um novo repositório: 
-`git init`
+```console
+git init
+```
 
 Clonando um repositório existete: 
-`git clone [url]`
+```console
+git clone [url]
+```
 
 Lista todos os atuais repositórios remotos: 
-`git remote -v`
+```console
+git remote -v
+```
 
 Mostra informações sobre o rep remoto: 
-`git remote show <remote>`
+```console
+git remote show <remote>
+```
 
 Adiciona um novo repositório remoto: 
-`git remote add <shortname> <url>`
+```console
+git remote add <shortname> <url>
+```
 
-##### Ignorando arquivos
+## 5. Ignorando arquivos
 Crie um arquivo .gitignore e coloque o conteúdo abaixo (Exemplo para java: 
 ```java
 *.class
@@ -91,86 +135,134 @@ logs/
 *.notes
 pattern*/
 ```
-##### Proxy
+## 6. Proxy
 Definindo proxy.
 
 HTTP: 
-`git config --global http.proxy http://usuario:senha@ip:porta`
+```console
+git config --global http.proxy http://usuario:senha@ip:porta
+```
 
 HTTPS: 
-`git config --global https.proxy http://usuario:senha@ip:porta`
+```console
+git config --global https.proxy http://usuario:senha@ip:porta
+```
 
-##### Sincronizando alterações
+## 7. Sincronizando alterações
 Ver arquivos alterados do seu workspace: 
-`git status`
+```console
+git status
+```
 
 Carrega todo o histórico remoto: 
-`git fetch`
+```console
+git fetch
+```
 
 combina o branch atual com o remoto: 
-`git merge`
+```console
+git merge
+```
 
 Envia para o servidor remoto todas as alterações: 
-`git push`
+```console
+git push
+```
 
 Atualiza seu reposótio local com todos os novos commits que foram feitos remotamente. É a combinação de git fetch e git merge:
-`git pull`
+```console
+git pull
+```
 
 
-##### Obtendo o histórico
+## 8. Obtendo o histórico
 Lista a versão do histórico do branch: 
-`git log`
+```console
+git log
+```
 
 Lista a versão de um histórico do arquivo, inclusive renomeações: 
-`git log --follow [file]`
+```console
+git log --follow [file]
+```
 
 Pega tudo o que você deletou. Adicione --relative-date para mostrar a data ou --all para todas as referências: 
-`git reflog`
+```console
+git reflog
+```
 
 Mostra todos os commit que contém a palavra 'abelha': 
-`git log --all --grep='abelha'`
+```console
+git log --all --grep='abelha'
+```
 
 Obtendo todos os commits pelo nome do autor: 
-`git log --author="Fabio"`
+```console
+git log --author="Fabio"
+```
 
 
-##### Fazendo alterações
+## 9. Fazendo alterações
 Mostra a diferenaç entre dois branches: 
-`git diff [first-branch]...[second-branch]`
+```console
+git diff [first-branch]...[second-branch]
+```
 
 Mostra o metadata e conteúdo alerado de um commit específico: 
-`git show [commit]`
+```console
+git show [commit]
+```
 
 Adiconar o arquivo para versionamento: 
-`git add [file]`
+```console
+git add [file]
+```
 
 Adiciona todas as alterações para o commit: 
-`git add .`
+```console
+git add .
+```
 
 Grava o arquivo permanentemente no histórico de versão: 
-`git commit -m "[descrição]"`
+```console
+git commit -m "[descrição]"
+```
 
 Apaga: 
-`git rm [arquivo]`
+```console
+git rm [arquivo]
+```
 
-##### Desfazendo commit
+## 10. Desfazendo commit
 Desfaz todos os commits depois de [commit], preservando alterações locais: 
-`git rese [commit]`
+```console
+git reset [commit]
+```
 
 Desfaz todo o histórico e alterações antes do commit especificado: 
-`git reset --hard [commit]`
+```console
+git reset --hard [commit]
+```
 
 Substitui o arquivo com o último do HEAD: 
-`git checkout --[arquivo]`
+```console
+git checkout --[arquivo]
+```
 
 
-##### Reverter algo que foi posto no seu repositório local: 
-`git fetch origin`
-`git checkout master`
-`git reset --hard origin/master`
+## 11. Reverter algo que foi posto no seu repositório local: 
+```console
+git fetch origin
+git checkout master`
+git reset --hard origin/master`
+```
 
-##### Diferença entre meu branch e o master: 
+## 12. Diferença entre meu branch e o master: 
+```console
 git diff master..my-branch
+```
 
-##### Editando o último commit: 
-`git commit --amend -m "mensagem melhor"` 
+## 13. Editando o último commit: 
+```console
+git commit --amend -m "mensagem melhor"
+```
