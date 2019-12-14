@@ -10,10 +10,11 @@
    <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
 
        <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
-           <div class="d-flex flex-justify-between flex-items-start mb-1">
-               <h1 class="f4 lh-condensed mb-1">
+           <div class="d-flex flex-justify-center flex-items-start mb-1" >
+               <h1 class="f4 lh-condensed mb-1" style="text-align: center">
                    <a href="http://localhost:4000/2000/01/01/todos-os-posts/">
-                       Todos os posts...
+                       <!-- {% octicon plus height:50 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %} -->
+                       {% octicon plus height:50 class:"mr-2 v-align-center" %}
                    </a>
                </h1>
            </div>
