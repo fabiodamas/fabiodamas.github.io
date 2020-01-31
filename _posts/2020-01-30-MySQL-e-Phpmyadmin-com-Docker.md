@@ -1,5 +1,5 @@
 ---
-title: "Mysql e PHPMyAdmin com Docker"
+title: "MySQL e PHPMyAdmin com Docker"
 published: true
 ---
 
