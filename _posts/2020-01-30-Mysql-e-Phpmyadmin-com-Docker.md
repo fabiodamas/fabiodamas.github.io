@@ -1,9 +1,10 @@
 ---
 title: "Mysql e PHPMyAdmin com Docker"
-published: false
+published: true
 ---
 
-<img src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/mysql.jpeg" alt="mysql phpmyadmin docker" width="300"/> O Docker é um projeto de código aberto que automatiza a implantação de aplicativos com o uso de containers. Ele será usado para criação dos containers do MySQL e do cliente phpMyAdmin.
+<img src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/mysql.jpeg" alt="mysql phpmyadmin docker" width="300"/>
+O Docker é um projeto de código aberto que automatiza a implantação de aplicativos com o uso de containers. Ele será usado para criação dos containers do MySQL e do cliente phpMyAdmin.
 
 # 1. Crie uma rede no Docker
 ```console
