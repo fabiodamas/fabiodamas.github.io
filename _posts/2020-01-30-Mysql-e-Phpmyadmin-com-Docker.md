@@ -5,39 +5,40 @@ published: false
 
 <img src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/mysql.jpeg" alt="mysql phpmyadmin docker" width="300"/>
 
-Docker is an open-source project that automates the deployment of applications inside software containers. These containers will be used to isolate our MySQL server and phpMyAdmin client.
+O Docker é um projeto de código aberto que automatiza a implantação de aplicativos dentro de contêineres de software. Ele será usado para criação dos containers do MySQL e do cliente phpMyAdmin.
 
-# 1. Create a Docker network
+# 1. Crie uma rede no Docker
 Configurando o nome:
 ```console
 $ docker network create fabio
 ```
    
-## 2. Create dir for database data  
+# 2. Crie uma pasta para armazenar os dados do Mysql
 ```console
 $ mkdir -p /opt/mysql
 ```
 
-## 3. Create MySQL container 
+## 3. Crie um container MySQL
 ```console
 $ docker run -d \
-    --name fabio-mysql \
-    --network fabio \
-    -e MYSQL_ROOT_PASSWORD="fabio" \
-    -v /opt/mysql:/var/lib/mysql \
-    -p 3306:3306 \
-    mysql:8.0.12
+         --name fabio-mysql \
+         --network fabio \
+         -e MYSQL_ROOT_PASSWORD=fabio \
+         -v /opt/mysql:/var/lib/mysql \
+         -p 3306:3306 mysql:latest
 ```
 
-## 4. Create the phpMyAdmin container
+## 4. Crie um container PHPMyAdmin
 ```console
-$ docker run -d \
-    --name fabio-phpmyadmin \
-    --network fabio \
-    -e PMA_HOST=fabio-mysql \
-    -p 8081:80 \
-    phpmyadmin/phpmyadmin:edge
+$ docker run \
+         --name fabio-phpmyadmin \
+         --network fabio \
+         -d \
+         -e PMA_HOST=fabio-mysql \
+         -p 8081:80 phpmyadmin/phpmyadmin
 ```
 
-## 5.Access the database
-Go to the browser and access the phpMyAdmin. The default user is “root” and password will the password set on MySQL container creation.
+## 5.Acesse o phpmyadmin 
+Entre em http://localhost:8081/. Você verá a página inicial do phpMyAdmin. O usuário padrão é root, a senha  a mesma definida na criação do container MySQL. Aqui no exemplo é "fabio".
+
+<img src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/phpmyadmin.png" alt="print phpmyadmin" >
