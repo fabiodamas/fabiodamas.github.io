@@ -3,7 +3,7 @@ title: "Mysql e PHPMyAdmin com Docker"
 published: false
 ---
 
-![alt text](https://raw.githubusercontent.com/fabiodamas/fabiodamas.github.io/master/_posts/git.png "Título do Artigo")
+<img src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/mysql.jpeg" alt="mysql phpmyadmin docker" width="300"/>
 
 Docker is an open-source project that automates the deployment of applications inside software containers. These containers will be used to isolate our MySQL server and phpMyAdmin client.
 
