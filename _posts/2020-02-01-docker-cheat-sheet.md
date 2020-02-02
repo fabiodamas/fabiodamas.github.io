@@ -53,7 +53,7 @@ $ docker container ls --all
 ```
 
 ## 4. Listar
-Listar contêineres com a –allopção (porque nenhum contêiner está em execução).
+Listar todos os contêineres 
 ```console 
 $ docker container ls --all
 ```
