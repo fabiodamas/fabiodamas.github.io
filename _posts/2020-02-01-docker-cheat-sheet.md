@@ -110,7 +110,7 @@ Criando um container, definindo que no hospedador, a pasta “opt/docker” ser�
 $ sudo docker run --name wildfly3 -d -v /opt/docker:/opt/jboss/wildfly/standalone/deployments -p 8082:8080 jboss/wildfly
 ```
 
-##6. IP
+## 6. IP
 Verificar IP atual da instância
 ```console 
 $ ip route get 8.8.8.8 | awk '{print $NF; exit}'
@@ -121,7 +121,7 @@ Outra forma de verificar o IP da instância:
 $ sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' wildfly3
 ```
 
-##7. Operaçoes
+## 7. Operaçoes
 Iniciar um Docker Container
 ```console 
 $ docker start #id_container
@@ -157,7 +157,7 @@ Acessando o Shell de um Docker Container em execução
 $ sudo docker exec -it  bash
 ```
 
-##8. Miscelânea
+## 8. Miscelânea
 Adicionar JAVA para uma imagem
 ```console 
     FROM dockerfile/ubuntu
