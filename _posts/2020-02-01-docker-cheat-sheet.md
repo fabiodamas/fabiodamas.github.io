@@ -78,7 +78,7 @@ Mostrar todas as instâncias criadas
 $ docker ps ­-a
 ```
 
-## 5. Execuçao
+## 5. Execução
 Puxe uma imagem do sistema operacional Ubuntu e execute um terminal interativo dentro do contêiner gerado:
 ```console 
 $ docker run --interactive --tty ubuntu bash
