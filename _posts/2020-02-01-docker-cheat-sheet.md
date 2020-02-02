@@ -3,16 +3,37 @@ title: "Docker Cheat Sheet"
 published: true
 ---
 
-![alt text](https://raw.githubusercontent.com/fabiodamas/fabiodamas.github.io/master/_posts/images/docker.png "Título do Artigo")
+![alt text](https://raw.githubusercontent.com/fabiodamas/fabiodamas.github.io/master/_posts/images/docker.png "Docker Cheat Sheet") O Docker é uma ferramenta projetada para facilitar a criação, a implementação e a execução de aplicativos usando contêineres. Os contêineres permitem que um desenvolvedor empacote um aplicativo com todas as partes de que precisa, como bibliotecas e outras dependências, e envie tudo como um único pacote. Ao fazer isso, graças ao contêiner, o desenvolvedor pode ter certeza de que o aplicativo será executado em qualquer outra máquina Linux, independentemente de quaisquer configurações personalizadas que a máquina possa ter e que possam diferir da máquina usada para gravar e testar o código.
 
-O Docker é uma ferramenta projetada para facilitar a criação, a implementação e a execução de aplicativos usando contêineres. Os contêineres permitem que um desenvolvedor empacote um aplicativo com todas as partes de que precisa, como bibliotecas e outras dependências, e envie tudo como um único pacote. Ao fazer isso, graças ao contêiner, o desenvolvedor pode ter certeza de que o aplicativo será executado em qualquer outra máquina Linux, independentemente de quaisquer configurações personalizadas que a máquina possa ter e que possam diferir da máquina usada para gravar e testar o código.
-
+## 1. Instalação e versão
+Instalação no Linux (Ubuntu)
+```console
+sudo apt-get update 
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add –
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable" 
+sudo apt-get update
+sudo apt-get install docker-ce
+```
 
 Ver a versão do docker
 ```console 
  $ docker --version
 ```
 
+Exibir informações do Docker
+```console 
+    sudo docker info
+```
+
+## 2. Ciclo de vida
+docker create: Cria um container mas nao inicia
+docker rename: Renomear container
+docker run: Cria e executa o container na mesma operaçao
+docker rm: Apaga o container
+docker update: Atualiza
+
+## 3. Imagem
 Puxar a imagem hello-world
 ```console 
  $ docker run hello-world
@@ -28,11 +49,7 @@ Listar o hello-world contêiner (que saiu depois de exibir “Hello from Docker!
  $ docker container ls --all
 ```
 
-Puxe uma imagem do sistema operacional Ubuntu e execute um terminal interativo dentro do contêiner gerado:
-```console 
- $ docker run --interactive --tty ubuntu bash
-```
-
+## 4. Listar
 Listar contêineres com a –allopção (porque nenhum contêiner está em execução).
 ```console 
  $ docker container ls --all
@@ -43,34 +60,88 @@ Listar apenas seus contêineres em execução :
  $ docker container ls
 ```
 
-Exibir informações do Docker
-```console 
-    sudo docker info
-```
-
 Listar todas as Docker Images
 ```console 
  $ docker images -a
 ```
 
+Verificar instâncias
+```console 
+docker ps
+```
+
+Mostrar todas as instâncias criadas
+```console 
+docker ps ­-a
+```
+
+## 5. Execuçao
+Puxe uma imagem do sistema operacional Ubuntu e execute um terminal interativo dentro do contêiner gerado:
+```console 
+ $ docker run --interactive --tty ubuntu bash
+```
+
+Nova instância com a criação de uma aplicação Ruby on Rails
+```console 
+docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new --skip-bundle my_awesome_app
+```
+
+Iniciando na linha de comando uma instância ubuntu
+```console 
+sudo docker run -i -t ubuntu:14.04 /bin/bash
+```
+
+Criando container e definindo uma porta para poder acessar externamente a máquina. A imagem é a do Wildfly, definido no final do comando com “jboss/wildfly”.
+```console 
+sudo docker run --name wildfly1 -d -p 8080:8080 jboss/wildfly
+```
+
+Iniciar outro wildfly na mesma rede
+```console 
+sudo docker network create mynetwork
+sudo docker run --name wildfly2 -d --net mynetwork -p 8081:8080 jboss/wildfly
+```
+
+Criando um container, definindo que no hospedador, a pasta “opt/docker” será a pasta de deploy do Wildfly:
+```console 
+sudo docker run --name wildfly3 -d -v /opt/docker:/opt/jboss/wildfly/standalone/deployments -p 8082:8080 jboss/wildfly
+```
+
+##6. IP
+Verificar IP atual da instância
+```console 
+ip route get 8.8.8.8 | awk '{print $NF; exit}'
+```
+
+Outra forma de verificar o IP da instância:
+```console 
+sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' wildfly3
+```
+
+##7. Operaçoes
 Iniciar um Docker Container
 ```console 
- $ docker start 
+ $ docker start #id_container
 ```
 
 Parar um Docker Container
 ```console 
- $ docker stop 
+ $ docker stop #id_container
 ```
 
 Reiniciar um Docker Container
 ```console 
- $ docker restart 
+ $ docker restart #id_container
+```
+
+Apagar uma instância
+```console 
+docker rm #id_container
 ```
 
 Visualizar os logs de um Docker Container em execução
 ```console 
- $ docker logs 
+ $ docker logs #id_container
 ```
 
 Deletar todos os Docker Containers
@@ -78,41 +149,12 @@ Deletar todos os Docker Containers
  $ docker rm $(docker ps -a -q)
 ```
 
-Remover uma docker Image
-```console 
- $ docker rmi 
-```
-
-Remover todas as Docker Images
-```console 
- $ docker rmi $(docker images -q)
-```
-
 Acessando o Shell de um Docker Container em execução
 ```console 
     sudo docker exec -it  bash
 ```
 
-Criando uma Tag de uma imagem a ser commitada no DockerHub
-```console 
- $ docker tag / / 
-```
-
-Autenticar no DockerHub
-```console 
- $ docker login
-```
-
-Enviar uma imagem para o DockerHub
-```console 
- $ docker push /
-```
-
-Construindo uma imagem a partir de um Dockerfile no diretório atual
-```console 
- $ docker build -t="" .
-```
-
+##8. Miscelânea
 Adicionar JAVA para uma imagem
 ```console 
     FROM dockerfile/ubuntu
@@ -137,7 +179,6 @@ Adicionar JAVA para uma imagem
     CMD ["bash"]
 ```
 
-
 Adicionando e executando um .jar de uma aplicação Spring Boot a uma Docker Image
 ```console 
     VOLUME /tmp
@@ -146,73 +187,10 @@ Adicionando e executando um .jar de uma aplicação Spring Boot a uma Docker Ima
     ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/myapp.jar"]
 ```
 
-Criando container, com uma imagem do Ubuntu.
-```console 
-sudo docker pull ubuntu
-```
-
-Iniciando na linha de comando uma instância ubuntu
-```console 
-sudo docker run -i -t ubuntu:14.04 /bin/bash
-```
-
-Criando container e definindo uma porta para poder acessar externamente a máquina. A imagem é a do Wildfly, definido no final do comando com “jboss/wildfly”.
-```console 
-sudo docker run --name wildfly1 -d -p 8080:8080 jboss/wildfly
-```
-
-Iniciar outro wildfly na mesma rede
-```console 
-sudo docker network create mynetwork
-sudo docker run --name wildfly2 -d --net mynetwork -p 8081:8080 jboss/wildfly
-```
-
 Iniciar o bash ou outro programa do container
 ```console 
 sudo docker exec -it wildfly1 bash
 ```
 
-Criando um container, definindo que no hospedador, a pasta “opt/docker” será a pasta de deploy do Wildfly:
-```console 
-sudo docker run --name wildfly3 -d -v /opt/docker:/opt/jboss/wildfly/standalone/deployments -p 8082:8080 jboss/wildfly
-```
 
-Parar o container:
-```console 
-docker stop id_do_seu_container
-```
 
-Verificar instâncias
-```console 
-docker ps
-```
-
-Mostrar todas as instâncias criadas
-```console 
-docker ps ­-a
-```
-
-Apagar uma instância
-```console 
-docker rm id_do_seu_container
-```
-
-Verificar IP atual da instância
-```console 
-ip route get 8.8.8.8 | awk '{print $NF; exit}'
-```
-
-Outra forma de verificar o IP da instância:
-```console 
-sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' wildfly3
-```
-
-Mostrar informacoes sobre a instância
-```console 
-sudo docker inspect wildfly3 | less
-```
-
-Nova instância com a criação de uma aplicação Ruby on Rails
-```console 
-docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new --skip-bundle my_awesome_app
-```
