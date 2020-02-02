@@ -3,7 +3,8 @@ title: "Docker Cheat Sheet"
 published: true
 ---
 
-![alt text](https://raw.githubusercontent.com/fabiodamas/fabiodamas.github.io/master/_posts/images/docker.png "Docker Cheat Sheet") O Docker é uma ferramenta projetada para facilitar a criação, a implementação e a execução de aplicativos usando contêineres. Os contêineres permitem que um desenvolvedor empacote um aplicativo com todas as partes de que precisa, como bibliotecas e outras dependências, e envie tudo como um único pacote. Ao fazer isso, graças ao contêiner, o desenvolvedor pode ter certeza de que o aplicativo será executado em qualquer outra máquina Linux, independentemente de quaisquer configurações personalizadas que a máquina possa ter e que possam diferir da máquina usada para gravar e testar o código.
+![alt text](https://raw.githubusercontent.com/fabiodamas/fabiodamas.github.io/master/_posts/images/docker.png "Docker Cheat Sheet") O Docker é uma ferramenta projetada para facilitar a criação, a implementação e a execução de aplicativos usando contêineres. Os contêineres permitem que um desenvolvedor empacote um aplicativo com todas as partes de que precisa, como bibliotecas e outras dependências, e envie tudo como um único pacote. 
+Ao fazer isso, graças ao contêiner, o desenvolvedor pode ter certeza de que o aplicativo será executado em qualquer outra máquina Linux, independentemente de quaisquer configurações personalizadas que a máquina possa ter e que possam diferir da máquina usada para gravar e testar o código.
 
 ## 1. Instalação e versão
 Instalação no Linux (Ubuntu)
