@@ -6,7 +6,7 @@ published: true
 Este é um passo a passo para criar um container com mysql e outro com phpmyadmin, usando o docker-compose.
 
 ## 1. Criando o arquivo
-Em uma pasta, crie o arquivo docker-conmpose.yml com o seguinte conteúdo:
+Em uma pasta, crie o arquivo docker-compose.yml com o seguinte conteúdo:
 ```console
 version: '3.1'
 services:
