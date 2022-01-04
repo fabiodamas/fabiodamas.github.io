@@ -19,25 +19,15 @@ $ mkdir -p /opt/mysql
 
 # 3. Crie um container MySQL
 ```console
-$ docker run -d \
-         --name fabio-mysql \
-         --network fabio \
-         -e MYSQL_ROOT_PASSWORD=fabio \
-         -v /opt/mysql:/var/lib/mysql \
-         -p 3306:3306 mysql:latest
+$ docker run --name fabio-mysql      --network fabio -d -e MYSQL_ROOT_PASSWORD=root  -p 3306:3306 mysql:latest
 ```
 
 # 4. Crie um container PHPMyAdmin
 ```console
-$ docker run \
-         --name fabio-phpmyadmin \
-         --network fabio \
-         -d \
-         -e PMA_HOST=fabio-mysql \
-         -p 8081:80 phpmyadmin/phpmyadmin
+$ docker docker run --name fabio-phpmyadmin --network fabio -d -e PMA_HOST=fabio-mysql  -p 8080:80 phpmyadmin
 ```
 
 # 5.Acesse o phpmyadmin 
-Entre em http://localhost:8081/. Você verá a página inicial do phpMyAdmin. O usuário padrão é root, a senha  a mesma definida na criação do container MySQL. Aqui no exemplo é "fabio".
+Entre em http://localhost:8081/. Você verá a página inicial do phpMyAdmin. O usuário padrão é root, a senha  a mesma definida na criação do container MySQL. Aqui no exemplo é "root".
 
 ![alt text](https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/phpmyadmin.png?raw=true "MySQL e PHPMyAdmin com Docker")
