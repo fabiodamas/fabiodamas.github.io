@@ -24,7 +24,7 @@ $ docker run --name fabio-mysql      --network fabio -d -e MYSQL_ROOT_PASSWORD=r
 
 # 4. Crie um container PHPMyAdmin
 ```console
-$ docker docker run --name fabio-phpmyadmin --network fabio -d -e PMA_HOST=fabio-mysql  -p 8080:80 phpmyadmin
+$ docker docker run --name fabio-phpmyadmin --network fabio -d -e PMA_HOST=fabio-mysql  -p 8081:80 phpmyadmin
 ```
 
 # 5.Acesse o phpmyadmin 
