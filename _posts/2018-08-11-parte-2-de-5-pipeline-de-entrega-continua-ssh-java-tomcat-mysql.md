@@ -107,5 +107,5 @@ create database exemplo1;
 ```
 O console exibirá a mensagem de sucesso: 
 
-Veja aqui a paste 1 do tutorial: [Pipeline de Entrega Contínua – Parte 2 – SSH / Java / Tomcat / Mysql](http://fabiodamas.io/2018/08/01/pipeline1/).
-Veja aqui a paste 3 do tutorial: [Pipeline de Entrega Contínua – Parte 2 – SSH / Java / Tomcat / Mysql](http://fabiodamas.io/2018/08/12/pipeline3/).
+Veja aqui a paste 1 do tutorial: [Parte 1 de 5 – Criando um Pipeline de Entrega Contínua](https://fabiodamas.github.io/2018/08/01/parte-1-de-5-criando-um-pipeline-de-entrega-continua/).
+Veja aqui a paste 3 do tutorial: [Parte 3 de 5 – Publicando aplicação JAVA do GitHub na Amazon](https://fabiodamas.github.io/2018/08/12/parte-3-de-5-publicando-aplicacao-java-do-github-na-amazon/).

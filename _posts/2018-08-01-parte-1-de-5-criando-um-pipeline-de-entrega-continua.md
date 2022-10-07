@@ -59,4 +59,4 @@ No canto inferior direito da tela, clique em “View Instances” para visualiza
 Você verá a sua instância recém-criada, Ubuntu-Server: 
 <img style="width:90%;height:auto;" src="https://raw.githubusercontent.com/fabiodamas/fabiodamas.github.io/master/_posts/images/pipeline/post1/amazon10.png">
  
-Veja aqui a paste 2 do tutorial: [Pipeline de Entrega Contínua – Parte 2 – SSH / Java / Tomcat / Mysql](http://fabiodamas.io/2018/08/11/pipeline2/).
+Veja aqui a paste 2 do tutorial: [Pipeline de Entrega Contínua – Parte 2 – SSH / Java / Tomcat / Mysql](https://fabiodamas.github.io/2018/08/11/parte-2-de-5-pipeline-de-entrega-continua-ssh-java-tomcat-mysql/).

@@ -96,4 +96,6 @@ O schema do mysql é  “exemplo1”, criado na parte 2 do tutorial. A senha é 
 Se você definiu uma outra senha, ou deixou outro nome no schema, você poderá baixar o código-fonte em seu computador e alterar o arquivo DatabaseOperation.java:
 <img style="width:90%;height:auto;"  src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/pipeline/post3/7.png?raw=true"> 
 
-Veja aqui a paste 2 do tutorial: [Pipeline de Entrega Contínua – Parte 2 – SSH / Java / Tomcat / Mysql](http://fabiodamas.io/2018/08/11/pipeline2/).
+Veja aqui a paste 2 do tutorial: [Parte 2 de 5 – Pipeline de Entrega Contínua – SSH / Java / Tomcat / Mysql](https://fabiodamas.github.io/2018/08/11/parte-2-de-5-pipeline-de-entrega-continua-ssh-java-tomcat-mysql/).
+
+Veja aqui a paste 4 do tutorial: [Parte 4 de 5 – Instalação do Jenkins](https://fabiodamas.github.io/2018/09/13/parte-4-de-5-instalacao-do-jenkins/).

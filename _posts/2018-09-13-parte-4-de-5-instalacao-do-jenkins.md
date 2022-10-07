@@ -105,3 +105,8 @@ A tela informa que o usuário é “admin” e a senha é a mesma obtida pelo ar
 
 
 No próximo post(final), será explicado a configuração do Jenkins para compilar o código-fonte no GitHUB, usando o maven. Logo após a criação do arquivo .war, este será transferido para a pasta de deploy do Tomcat.
+
+
+Veja aqui a paste 3 do tutorial: [Parte 3 de 5 – Publicando aplicação JAVA do GitHub na Amazon](https://fabiodamas.github.io/2018/08/12/parte-3-de-5-publicando-aplicacao-java-do-github-na-amazon/).
+
+Veja aqui a paste 5 do tutorial: [Parte 5 (Final) – Jenkins integrado ao GitHub e deploy na Amazon](https://fabiodamas.github.io/2018/09/20/parte-5-final-jenkins-integrado-ao-gitHub-e-deploy-na-amazon/).
