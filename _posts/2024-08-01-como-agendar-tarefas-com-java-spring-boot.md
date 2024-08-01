@@ -2,7 +2,20 @@
 title: "Agendar tarefas com Java e Spring Boot"
 published: true
 ---
-O agendamento de tarefas é uma funcionalidade crucial em muitas aplicações, especialmente quando se trata de automatizar tarefas repetitivas, executar grandes lotes de operações ou garantir que certas atividades sejam realizadas em intervalos específicos. O Spring Boot oferece maneiras práticas e eficazes para lidar com o agendamento de tarefas, facilitando a vida dos desenvolvedores. Neste post, vamos explorar como configurar e usar a anotação `@Scheduled` no Spring Boot para agendar tarefas de maneira simples e eficiente.
+<head>
+    <!-- Meta tags para LinkedIn -->
+    <meta property="og:title" content="Como Agendar Tarefas no Spring Boot com a Anotação @Scheduled">
+    <meta property="og:description" content="Aprenda a configurar e usar a anotação @Scheduled no Spring Boot para agendar tarefas de maneira eficiente. Explore exemplos e dicas práticas.">
+    <meta property="og:image" content="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/clock.png?raw=true">
+    <meta property="og:type" content="article">
+</head>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+    <img style="width: 30%; height: auto; margin-right: 20px;" src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/clock.png?raw=true" alt="Ilustração sobre agendamento de tarefas no Spring Boot">
+    <p style="flex: 1;">O agendamento de tarefas é uma funcionalidade crucial em muitas aplicações, especialmente quando se trata de automatizar tarefas repetitivas, executar grandes lotes de operações ou garantir que certas atividades sejam realizadas em intervalos específicos. O Spring Boot oferece maneiras práticas e eficazes para lidar com o agendamento de tarefas, facilitando a vida dos desenvolvedores. Neste post, vamos explorar como configurar e usar a anotação <code>@Scheduled</code> no Spring Boot para agendar tarefas de maneira simples e eficiente.</p>
+</div>
+
+
 ### Introdução ao Agendamento de Tarefas no Spring Boot
 O Spring Boot proporciona a anotação `@Scheduled` para simplificar o agendamento de tarefas. Essa funcionalidade é baseada no `ScheduledExecutorService` nativo do Java, com uma camada adicional de abstração oferecida pelo Spring Boot, permitindo que os desenvolvedores definam e gerenciem tarefas agendadas sem a necessidade de escrever muito código boilerplate.
 ### Habilitando o Suporte ao Agendamento
