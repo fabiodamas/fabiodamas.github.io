@@ -11,7 +11,7 @@ published: true
 </head>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-    <img style="width: 30%; height: auto; margin-right: 20px;" src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/clock.png?raw=true" alt="Ilustração sobre agendamento de tarefas no Spring Boot">
+    <img style="width: 30%; height: auto; margin-right: 20px; object-fit: contain;" src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/clock.png?raw=true" alt="Ilustração sobre agendamento de tarefas no Spring Boot">
     <p style="flex: 1;">O agendamento de tarefas é uma funcionalidade crucial em muitas aplicações, especialmente quando se trata de automatizar tarefas repetitivas, executar grandes lotes de operações ou garantir que certas atividades sejam realizadas em intervalos específicos. O Spring Boot oferece maneiras práticas e eficazes para lidar com o agendamento de tarefas, facilitando a vida dos desenvolvedores. Neste post, vamos explorar como configurar e usar a anotação <code>@Scheduled</code> no Spring Boot para agendar tarefas de maneira simples e eficiente.</p>
 </div>
 
