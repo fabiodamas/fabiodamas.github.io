@@ -7,7 +7,7 @@ published: true
     <meta property="og:title" content="Chega de tabela de senhas: autenticação LDAP com Spring Boot e Spring Security">
     <meta property="og:description" content="Como autenticar usuários do diretório corporativo (LDAP, Active Directory) em uma aplicação Spring Boot: conceitos, implementação, grupos como papéis, boas práticas e erros comuns.">
     <meta property="og:image" content="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/ldap/fluxo-autenticacao-ldap.png?raw=true">
-    <meta property="og:url" content="https://fabiodamas.github.io/2026/02/01/autenticacao-ldap-com-spring-boot/">
+    <meta property="og:url" content="https://fabiodamas.github.io/2026/10/21/autenticacao-ldap-com-spring-boot/">
     <meta property="og:type" content="article">
 </head>
 
