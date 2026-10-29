@@ -1,14 +1,9 @@
 ---
 title: "Agendar tarefas com Java e Spring Boot"
 published: true
+description: "Aprenda a configurar e usar a anotação @Scheduled no Spring Boot para agendar tarefas de maneira eficiente. Explore exemplos e dicas práticas."
+image: "https://raw.githubusercontent.com/fabiodamas/fabiodamas.github.io/master/_posts/images/clock.png"
 ---
-<head>
-    <!-- Meta tags para LinkedIn -->
-    <meta property="og:title" content="Como Agendar Tarefas no Spring Boot com a Anotação @Scheduled">
-    <meta property="og:description" content="Aprenda a configurar e usar a anotação @Scheduled no Spring Boot para agendar tarefas de maneira eficiente. Explore exemplos e dicas práticas.">
-    <meta property="og:image" content="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/clock.png?raw=true">
-    <meta property="og:type" content="article">
-</head>
 
 
 <div style="text-align: center; margin-bottom: 20px;">
