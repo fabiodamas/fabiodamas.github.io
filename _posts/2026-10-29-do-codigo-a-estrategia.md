@@ -1,9 +1,9 @@
 ---
-title: "Do código à estratégia: 7 ideias de estratégia corporativa para quem quer liderar tecnologia"
+title: "Do código à estratégia: 7 ideias de estratégia corporativa na liderança de tecnologia"
 published: true
 ---
 <head>
-    <meta property="og:title" content="Do código à estratégia: 7 ideias de estratégia corporativa para quem quer liderar tecnologia">
+    <meta property="og:title" content="Do código à estratégia: 7 ideias de estratégia corporativa na liderança de tecnologia">
     <meta property="og:description" content="Terminei o módulo de Estratégia Corporativa e de Negócios do MBA da FGV. As sete ideias que mais mudaram meu jeito de ver tecnologia, e como cada uma vira decisão no dia a dia de um time de backend.">
     <meta property="og:image" content="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/estrategia/estrategia-cover.png?raw=true">
     <meta property="og:url" content="https://fabiodamas.github.io/2026/10/29/do-codigo-a-estrategia/">
@@ -12,10 +12,10 @@ published: true
 
 
 <div style="text-align: center; margin-bottom: 20px;">
-    <img style="width: 100%; height: auto; margin-bottom: 20px;" src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/estrategia/estrategia-cover.png?raw=true" alt="Do código à estratégia: 7 ideias para quem quer liderar tecnologia. Técnica: Java, Spring Boot, Kafka, RabbitMQ e Pix. Mais estratégia: visão, VRIO, SWOT e GUT, BSC e OKR">
+    <img style="width: 100%; height: auto; margin-bottom: 20px;" src="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/estrategia/estrategia-cover.png?raw=true" alt="Do código à estratégia: 7 ideias na liderança de tecnologia. Técnica: Java, Spring Boot, Kafka, RabbitMQ e Pix. Mais estratégia: visão, VRIO, SWOT e GUT, BSC e OKR">
 </div>
 
-Nos últimos anos, meu dia a dia foi Java, Spring Boot, Kafka, RabbitMQ e Pix. Depois do MBA na FIAP, escolhi um MBA de gestão na FGV, e acabo de terminar o módulo de **Estratégia Corporativa e de Negócios**, com o professor David Lobato.
+Nos últimos anos, meu dia a dia foi Java, Spring Boot, Kafka, RabbitMQ e Pix. Depois do MBA na FIAP, escolhi um MBA de gestão na [@FGV](https://www.linkedin.com/school/fgv/), e acabo de terminar o módulo de **Estratégia Corporativa e de Negócios**.
 
 Fui para a disciplina querendo entender a linguagem de quem decide o que a tecnologia vai construir. Saí com perguntas que hoje faço antes de abrir a IDE: para quem? Por que agora? O que vamos deixar de fazer?
 
@@ -113,7 +113,7 @@ Um não substitui o outro: o BSC dá a visão integrada e plurianual da estraté
 
 Para um time de tecnologia, essa cascata resolve um problema antigo: ligar o trabalho técnico ao que a empresa mede. A visão diz aonde ir; o BSC, o que importa; o OKR, o que o time vai mover no trimestre; a GUT, por onde começar; e as métricas de entrega fecham o ciclo.
 
-## Por que isso importa para quem quer liderar tecnologia
+## Por que isso importa na liderança de tecnologia
 
 A diferença entre um especialista e um líder técnico não está em saber mais Java. Está em traduzir decisões técnicas para a linguagem da estratégia (cliente, risco, custo e prazo) e trazer a estratégia de volta para as decisões técnicas. Escolher entre Kafka e RabbitMQ é uma decisão técnica. Decidir que nenhum pagamento pode se perder é uma decisão de negócio, e ela vem antes.
 
@@ -157,7 +157,7 @@ E você, que vem da área técnica: qual dessas ferramentas já usa no dia a dia
 
 ## Referências
 
-- Disciplina Estratégia Corporativa e de Negócios, professor David Lobato, MBA FGV (aulas 1 a 5).
+- Disciplina Estratégia Corporativa e de Negócios, MBA FGV (aulas 1 a 5).
 - [Hamel, G.; Prahalad, C. K.: Competing for the Future, Harvard Business Review, jul-ago 1994](https://hbr.org/1994/07/competing-for-the-future)
 - Drucker, P. *O Executivo Eficaz*, 1966.
 - Barney, J. Firm Resources and Sustained Competitive Advantage. *Journal of Management*, 1991.
