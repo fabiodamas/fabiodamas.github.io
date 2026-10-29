@@ -1,14 +1,9 @@
 ---
 title: "Do código à estratégia: 7 ideias de estratégia corporativa na liderança de tecnologia"
 published: true
+description: "Terminei o módulo de Estratégia Corporativa e de Negócios do MBA da FGV. As sete ideias que mais mudaram meu jeito de ver tecnologia, e como cada uma vira decisão no dia a dia de um time de backend."
+image: "https://raw.githubusercontent.com/fabiodamas/fabiodamas.github.io/master/_posts/images/estrategia/estrategia-cover.png"
 ---
-<head>
-    <meta property="og:title" content="Do código à estratégia: 7 ideias de estratégia corporativa na liderança de tecnologia">
-    <meta property="og:description" content="Terminei o módulo de Estratégia Corporativa e de Negócios do MBA da FGV. As sete ideias que mais mudaram meu jeito de ver tecnologia, e como cada uma vira decisão no dia a dia de um time de backend.">
-    <meta property="og:image" content="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/estrategia/estrategia-cover.png?raw=true">
-    <meta property="og:url" content="https://fabiodamas.github.io/2026/10/29/do-codigo-a-estrategia/">
-    <meta property="og:type" content="article">
-</head>
 
 
 <div style="text-align: center; margin-bottom: 20px;">

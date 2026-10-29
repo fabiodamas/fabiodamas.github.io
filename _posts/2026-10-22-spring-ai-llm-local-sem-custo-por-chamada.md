@@ -1,14 +1,9 @@
 ---
 title: "IA generativa no seu servidor: R$ 0,00 por chamada com Spring AI e Ollama"
 published: true
+description: "Como conectar um LLM rodando na sua máquina a uma aplicação Spring Boot — duas formas, latência real medida e como o tool calling se comporta na prática."
+image: "https://raw.githubusercontent.com/fabiodamas/fabiodamas.github.io/master/_posts/images/spring-ai/spring-ai-local-llm-cover.png"
 ---
-<head>
-    <meta property="og:title" content="IA generativa no seu servidor: R$ 0,00 por chamada com Spring AI e Ollama">
-    <meta property="og:description" content="Como conectar um LLM rodando na sua máquina a uma aplicação Spring Boot — duas formas, latência real medida e como o tool calling se comporta na prática.">
-    <meta property="og:image" content="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/spring-ai/spring-ai-local-llm-cover.png?raw=true">
-    <meta property="og:url" content="https://fabiodamas.github.io/2026/10/22/spring-ai-llm-local-sem-custo-por-chamada/">
-    <meta property="og:type" content="article">
-</head>
 
 
 <div style="text-align: center; margin-bottom: 20px;">

@@ -1,15 +1,9 @@
 ---
 title: "A IA escreve código mais rápido do que o seu time consegue revisar"
 published: true
+description: "Com agentes de código, o gargalo saiu da escrita e foi para a revisão. O que dizem o DORA e o Gartner, o que é um Agent Coding Harness e como medir entrega e estabilidade em vez de volume de código."
+image: "https://raw.githubusercontent.com/fabiodamas/fabiodamas.github.io/master/_posts/images/harness/harness-gargalo.png"
 ---
-<head>
-    <!-- Meta tags para LinkedIn e Facebook -->
-    <meta property="og:title" content="A IA escreve código mais rápido do que o seu time consegue revisar">
-    <meta property="og:description" content="Com agentes de código, o gargalo saiu da escrita e foi para a revisão. O que dizem o DORA e o Gartner, o que é um Agent Coding Harness e como medir entrega e estabilidade em vez de volume de código.">
-    <meta property="og:image" content="https://github.com/fabiodamas/fabiodamas.github.io/blob/master/_posts/images/harness/harness-gargalo.png?raw=true">
-    <meta property="og:url" content="https://fabiodamas.github.io/2026/10/22/ia-escreve-codigo-mais-rapido-que-o-time-revisa/">
-    <meta property="og:type" content="article">
-</head>
 
 
 <div style="text-align: center; margin-bottom: 20px;">
